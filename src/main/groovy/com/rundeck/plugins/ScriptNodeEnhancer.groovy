@@ -104,6 +104,7 @@ class ScriptNodeEnhancer implements NodeEnhancerPlugin {
             } else {
                 println("[updateNode] script finished with exit code ${exitValue}")
             }
+            file.delete()
         }catch(Exception e){
             e.printStackTrace()
         }
